@@ -6,7 +6,6 @@ import WhyChooseGCH from "./WhyChooseGCH.jsx";
 import FAQ from "./FAQ.jsx";
 import OurClients from "./OurClients.jsx";
 import OtherBenefits from "./OtherBenefits.jsx";
-import Subsidy from "./Subsidy.jsx";
 import WhatWeDo from "./WhatWeDo.jsx";
 import { Home, DollarSign, Leaf, Zap, Shield, Settings } from "lucide-react";
 import { useNavigate } from 'react-router-dom';
@@ -378,28 +377,12 @@ const Residential = () => {
       <Navbar />
       <ResidentialHeroSection />
       <CTAButtons />
-      
       <ResidentialBenefitsSection />
-      
-      {}
       <OtherBenefits />
-      
-      {}
-      <Subsidy />
-      
-      {}
       <WhatWeDo />
-      
-      {}
       <WhySolarResidential />
-      
-      {}
       <WhyChooseGCH />
-      
-      {}
       <FAQ />
-      
-      {}
       <OurClients />
     </div>
   );
