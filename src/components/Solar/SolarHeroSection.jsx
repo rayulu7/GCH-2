@@ -39,7 +39,7 @@ const SolarHeroSection = () => {
 
   return (
     <div className="relative min-h-screen overflow-hidden">
-      {/* Background Image - For desktop */}
+      
       <div 
         className="hidden lg:block absolute inset-0 z-0"
         style={{
@@ -50,10 +50,9 @@ const SolarHeroSection = () => {
         }}
       ></div>
       
-      {/* Overlay - Desktop */}
+      
       <div className="hidden lg:block absolute inset-0 bg-black bg-opacity-40 z-0"></div>
 
-      {/* Mobile Banner Section - Hidden on desktop */}
       <div 
         className="block lg:hidden relative min-h-screen"
         style={{
@@ -63,7 +62,7 @@ const SolarHeroSection = () => {
           backgroundRepeat: "no-repeat"
         }}
       >
-        {/* Overlay - Mobile */}
+       
         <div className="absolute inset-0 bg-black bg-opacity-40 z-0"></div>
         <div className="relative z-10 flex items-center justify-center min-h-screen p-6 md:p-8">
           <div className="text-white max-w-2xl w-full text-center">
