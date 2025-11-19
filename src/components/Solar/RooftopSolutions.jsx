@@ -66,7 +66,7 @@ export default function RooftopSolutions() {
                       ? 'bg-[#3A954F] text-white'
                       : 'bg-white text-[#828282] hover:bg-gray-50'
                   }`}
-                  style={{ borderRadius: '10px' }}
+                  style={{ borderRadius: '0.625rem' }}
                 >
                   {solution.name}
                 </button>

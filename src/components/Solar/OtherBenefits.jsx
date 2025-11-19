@@ -127,7 +127,7 @@ const TabbedBenefitsSection = ({ items = [] }) => {
                       ? "bg-[#3A954F] text-white"
                       : "bg-white text-[#828282] hover:bg-gray-50"
                   }`}
-                  style={{ borderRadius: "10px" }}
+                  style={{ borderRadius: "0.625rem" }}
                 >
                   {item.title}
                 </button>
@@ -197,7 +197,7 @@ export default function OtherBenefits({ type = "residential", tabbedItems, listI
                   style={{
                     display: "block",
                     width: "100%",
-                    marginBottom: "24px",
+                    marginBottom: "1.5rem",
                     clear: "both",
                   }}
                 >

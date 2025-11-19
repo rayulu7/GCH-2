@@ -73,12 +73,12 @@ export default function Weprovide({ type = "residential" }) {
                     className="rounded-md text-white font-semibold transition-transform duration-200 hover:scale-[1.02] active:scale-[0.99]"
                     style={{
                       background: GREEN,
-                      padding: "6px 12px",
+                      padding: "0.375rem 0.75rem",
                       borderStyle: "solid",
-                      borderWidth: "0.8px",
+                      borderWidth: "0.05rem",
                       borderColor: GREEN,
-                      marginTop: "11px",
-                      marginBottom: "18px",
+                      marginTop: "0.6875rem",
+                      marginBottom: "1.125rem",
                     }}
                   >
                     {expanded ? "Read Less" : "Read More"}

@@ -18,10 +18,10 @@ const TopCard = ({ icon, title, desc }) => (
       lg:w-[379.99px] lg:h-[507.2px]
     "
     style={{
-      paddingTop: '60px',
-      paddingRight: '50px', 
-      paddingBottom: '60px',
-      paddingLeft: '60px'
+      paddingTop: '3.75rem',
+      paddingRight: '3.125rem', 
+      paddingBottom: '3.75rem',
+      paddingLeft: '3.75rem'
     }}
   >
     <div className="mb-4 text-green-600">
@@ -34,9 +34,9 @@ const TopCard = ({ icon, title, desc }) => (
       className="text-[#828282] text-justify"
       style={{
         fontFamily: 'Inter, sans-serif',
-        fontSize: '16px',
-        lineHeight: '24px',
-        marginBottom: '30px'
+        fontSize: '1rem',
+        lineHeight: '1.5rem',
+        marginBottom: '1.875rem'
       }}
     >
       {desc}
@@ -53,10 +53,10 @@ const SmallCard = ({ icon, title, desc }) => (
       lg:w-[379.99px] lg:h-[389.6px]
     "
     style={{
-      paddingTop: '60px',
-      paddingRight: '50px', 
-      paddingBottom: '60px',
-      paddingLeft: '60px'
+      paddingTop: '3.75rem',
+      paddingRight: '3.125rem', 
+      paddingBottom: '3.75rem',
+      paddingLeft: '3.75rem'
     }}
   >
     <div className="mb-4 text-green-600">
@@ -69,9 +69,9 @@ const SmallCard = ({ icon, title, desc }) => (
       className="text-[#828282] text-justify"
       style={{
         fontFamily: 'Inter, sans-serif',
-        fontSize: '16px',
-        lineHeight: '24px',
-        marginBottom: '30px'
+        fontSize: '1rem',
+        lineHeight: '1.5rem',
+        marginBottom: '1.875rem'
       }}
     >
       {desc}
@@ -88,10 +88,10 @@ const MediumCard = ({ icon, title, desc }) => (
       lg:w-[379.99px] lg:h-[413.6px]
     "
     style={{
-      paddingTop: '60px',
-      paddingRight: '50px', 
-      paddingBottom: '60px',
-      paddingLeft: '60px'
+      paddingTop: '3.75rem',
+      paddingRight: '3.125rem', 
+      paddingBottom: '3.75rem',
+      paddingLeft: '3.75rem'
     }}
   >
     <div className="mb-4 text-green-600">
@@ -104,9 +104,9 @@ const MediumCard = ({ icon, title, desc }) => (
       className="text-[#828282] text-justify"
       style={{
         fontFamily: 'Inter, sans-serif',
-        fontSize: '16px',
-        lineHeight: '24px',
-        marginBottom: '30px'
+        fontSize: '1rem',
+        lineHeight: '1.5rem',
+        marginBottom: '1.875rem'
       }}
     >
       {desc}
@@ -347,7 +347,7 @@ const IndustrialCommercial = () => {
                   <button
                     type="submit"
                     className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-semibold px-12 py-4 shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 text-base min-w-[200px]"
-                    style={{ borderRadius: '5px' }}
+                    style={{ borderRadius: '0.3125rem' }}
                   >
                     Send Message
                   </button>
@@ -462,7 +462,7 @@ const IndustrialCommercial = () => {
                   <button
                     type="submit"
                     className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-semibold px-8 sm:px-12 py-3 sm:py-4 shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 text-sm sm:text-base min-w-[160px] sm:min-w-[200px]"
-                    style={{ borderRadius: '5px' }}
+                    style={{ borderRadius: '0.3125rem' }}
                   >
                     Send Message
                   </button>
@@ -486,9 +486,9 @@ const IndustrialCommercial = () => {
                 className="text-[#000000] mb-5 text-left"
                 style={{
                   fontFamily: 'Inter, sans-serif',
-                  fontSize: '16px',
-                  lineHeight: '24px',
-                  margin: '0px 0px 5px'
+                  fontSize: '1rem',
+                  lineHeight: '1.5rem',
+                  margin: '0 0 0.3125rem'
                 }}
               >
                 Industries like manufacturing, food processing, fabrication, and others require high electricity demands. Industrial rooftop solar power systems offer a renewable and cost-effective alternative to thermal power. Businesses benefit significantly from industrial rooftop solar installations.
@@ -548,9 +548,9 @@ const IndustrialCommercial = () => {
                 className="text-[#000000] mb-5 text-left"
                 style={{
                   fontFamily: 'Inter, sans-serif',
-                  fontSize: '16px',
-                  lineHeight: '24px',
-                  margin: '0px 0px 5px',
+                  fontSize: '1rem',
+                  lineHeight: '1.5rem',
+                  margin: '0 0 0.3125rem',
                   textAlign: 'center'
                 }}
               >

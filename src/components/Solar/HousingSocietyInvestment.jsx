@@ -36,7 +36,7 @@ export default function HousingSocietyInvestment() {
                 className="text-white font-semibold rounded-md transition-transform duration-200 hover:scale-[1.02] active:scale-[0.99]"
                 style={{
                   width: "283.54px",
-                  height: "60px",
+                  height: "3.75rem",
                   backgroundColor: "#3a954f",
                 }}
               >

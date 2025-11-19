@@ -46,9 +46,9 @@ const ResidentialBenefitsSection = () => {
               className="text-[#000000] mb-5 text-left"
               style={{
                 fontFamily: 'Inter, sans-serif',
-                fontSize: '16px',
-                lineHeight: '24px',
-                margin: '0px 0px 5px'
+                fontSize: '1rem',
+                lineHeight: '1.5rem',
+                margin: '0 0 0.3125rem'
               }}
             >
               Residential Rooftop Solar Panels have become more efficient and affordable with its vast benefits and government subsidies, making them a viable option for various types of homes, from single-family houses to multi-unit dwellings. Rooftop solar panel installation in Hyderabad not only helps you get free electricity but also helps you to earn money on each unit your solar power system produces.
@@ -250,7 +250,7 @@ const ResidentialHeroSection = () => {
                 <button
                   type="submit"
                   className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-semibold px-12 py-4 shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 text-base min-w-[200px]"
-                  style={{ borderRadius: '5px' }}
+                  style={{ borderRadius: '0.3125rem' }}
                 >
                   Send Message
                 </button>
@@ -358,7 +358,7 @@ const ResidentialHeroSection = () => {
                 <button
                   type="submit"
                   className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-semibold px-8 sm:px-12 py-3 sm:py-4 shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 text-sm sm:text-base min-w-[160px] sm:min-w-[200px]"
-                  style={{ borderRadius: '5px' }}
+                  style={{ borderRadius: '0.3125rem' }}
                 >
                   Send Message
                 </button>

@@ -44,7 +44,7 @@ const OurClients = () => {
                 style={{ 
                   border: 'none', 
                   outline: 'none',
-                  margin: '5px 0 0 0'
+                  margin: '0.3125rem 0 0 0'
                 }}
               />
             </div>

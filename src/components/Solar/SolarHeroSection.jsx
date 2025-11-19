@@ -158,7 +158,7 @@ const SolarHeroSection = () => {
                 <button
                   type="submit"
                   className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-semibold px-12 py-4 shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 text-base min-w-[200px]"
-                  style={{ borderRadius: '5px' }}
+                  style={{ borderRadius: '0.3125rem' }}
                 >
                   Send Message
                 </button>
@@ -262,7 +262,7 @@ const SolarHeroSection = () => {
                 <button
                   type="submit"
                   className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-semibold px-8 sm:px-12 py-3 sm:py-4 shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 text-sm sm:text-base min-w-[160px] sm:min-w-[200px]"
-                  style={{ borderRadius: '5px' }}
+                  style={{ borderRadius: '0.3125rem' }}
                 >
                   Send Message
                 </button>

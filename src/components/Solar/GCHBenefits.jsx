@@ -52,12 +52,13 @@ const GCHBenefits = () => {
         <motion.p
           className="text-left mx-auto mb-12"
           style={{
-            fontSize: '17.6px',
+            fontSize: '1.1rem',
             lineHeight: '1.6',
             color: '#555555',
             fontFamily: 'Inter, sans-serif',
-            margin: '0px 0px 24px',
-            width: '1200px'
+            margin: '0 0 1.5rem',
+            width: '100%',
+            maxWidth: '75rem'
           }}
           initial={{ opacity: 0, x: 30 }}
           animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: 30 }}
@@ -79,7 +80,7 @@ const GCHBenefits = () => {
               style={{
                 cursor: 'pointer',
                 position: 'relative',
-                minHeight: '150px'
+                minHeight: '9.375rem'
               }}
               initial={{ opacity: 0, y: 50 }}
               animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
@@ -93,7 +94,7 @@ const GCHBenefits = () => {
                 scale: 1.03,
                 boxShadow: "0 25px 50px -12px rgba(34, 197, 94, 0.4), 0 0 0 2px rgba(34, 197, 94, 0.3)",
                 backgroundColor: "#f0fdf4",
-                border: "2px solid rgba(34, 197, 94, 0.5)",
+                border: "0.125rem solid rgba(34, 197, 94, 0.5)",
                 transition: { duration: 0.3, ease: "easeOut" }
               }}
               whileTap={{ scale: 0.95 }}
@@ -102,7 +103,7 @@ const GCHBenefits = () => {
                 className="benefit-icon"
                 style={{
                   color: '#059669',
-                  marginBottom: '16px',
+                  marginBottom: '1rem',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center'
@@ -122,7 +123,7 @@ const GCHBenefits = () => {
                 style={{
                   color: '#374151',
                   fontWeight: '600',
-                  fontSize: '16px',
+                  fontSize: '1rem',
                   textAlign: 'center',
                   margin: '0',
                   lineHeight: '1.2'
@@ -145,12 +146,13 @@ const GCHBenefits = () => {
         <motion.p
           className="text-left mx-auto mt-12"
           style={{
-            fontSize: '17.6px',
+            fontSize: '1.1rem',
             lineHeight: '1.6',
             color: '#555555',
             fontFamily: 'Inter, sans-serif',
-            margin: '0px 0px 24px',
-            width: '1200px'
+            margin: '0 0 1.5rem',
+            width: '100%',
+            maxWidth: '75rem'
           }}
           initial={{ opacity: 0, x: 30 }}
           animate={isVisible ? { opacity: 1, x: 0 } : { opacity: 0, x: 30 }}

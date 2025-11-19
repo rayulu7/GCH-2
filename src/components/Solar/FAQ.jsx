@@ -46,11 +46,11 @@ const FAQ = () => {
               className="bg-white rounded-lg shadow-md border border-gray-200 w-full"
               style={{
                 minHeight: '59.2px',
-                paddingTop: '16px',
-                paddingRight: '20px',
-                paddingBottom: '16px',
-                paddingLeft: '20px',
-                fontSize: '16px',
+                paddingTop: '1rem',
+                paddingRight: '1.25rem',
+                paddingBottom: '1rem',
+                paddingLeft: '1.25rem',
+                fontSize: '1rem',
                 fontWeight: '600',
                 color: openId === faq.id ? '#3A954F' : 'var(--tp-heading-primary)',
                 transition: 'all 0.3s ease'
@@ -79,9 +79,9 @@ const FAQ = () => {
                 <div 
                   className="mt-4"
                   style={{
-                    padding: '0px 0px 20px 0px',
+                    padding: '0 0 1.25rem 0',
                     color: '#828282',
-                    fontSize: '14px',
+                    fontSize: '0.875rem',
                     fontFamily: 'Inter, sans-serif',
                     lineHeight: '1.5'
                   }}

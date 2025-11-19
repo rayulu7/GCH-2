@@ -16,7 +16,7 @@ const InstallationServices = () => {
       },
       {
         threshold: 0.2,
-        rootMargin: '0px 0px -100px 0px'
+        rootMargin: '0 0 -6.25rem 0'
       }
     );
 
@@ -83,8 +83,8 @@ const InstallationServices = () => {
               className={`service-card group bg-white rounded-lg shadow-lg hover:shadow-2xl flex flex-col w-full max-w-sm lg:max-w-none ${isVisible ? 'animate' : ''}`}
               style={{ 
                 width: '100%',
-                maxWidth: '340px',
-                height: '580px'
+                maxWidth: '21.25rem',
+                height: '36.25rem'
               }}
             >
               <div className="relative w-full h-80 md:h-80 lg:h-80">
