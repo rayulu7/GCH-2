@@ -13,30 +13,36 @@ const TopCard = ({ icon, title, desc }) => (
   <article
     className="
       bg-white rounded-2xl shadow-md
-      flex flex-col items-center text-center
       w-full max-w-[520px] mx-auto
       lg:w-[379.99px] lg:h-[507.2px]
     "
     style={{
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+      gap: '1rem',
+      paddingLeft: '3.75rem',
+      paddingRight: '3.125rem',
       paddingTop: '3.75rem',
-      paddingRight: '3.125rem', 
-      paddingBottom: '3.75rem',
-      paddingLeft: '3.75rem'
+      paddingBottom: '3.75rem'
     }}
   >
-    <div className="mb-4 text-green-600">
+    <div className="text-green-600" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
       {React.cloneElement(icon, { className: "w-10 h-10 sm:w-12 sm:h-12" })}
     </div>
-    <h3 className="text-[17px] sm:text-[19px] md:text-[20px] font-bold text-[#111827] mb-3 sm:mb-4">
+    <h3 className="text-[17px] sm:text-[19px] md:text-[20px] font-bold text-[#111827] text-center">
       {title}
     </h3>
     <p 
-      className="text-[#828282] text-justify"
+      className="text-[#828282] text-justify flex-1"
       style={{
         fontFamily: 'Inter, sans-serif',
         fontSize: '1rem',
         lineHeight: '1.5rem',
-        marginBottom: '1.875rem'
+        display: 'flex',
+        alignItems: 'flex-start',
+        justifyContent: 'center'
       }}
     >
       {desc}
@@ -48,30 +54,36 @@ const SmallCard = ({ icon, title, desc }) => (
   <article
     className="
       bg-white rounded-2xl shadow-md
-      flex flex-col items-center text-center
       w-full max-w-[520px] mx-auto
       lg:w-[379.99px] lg:h-[389.6px]
     "
     style={{
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+      gap: '1rem',
+      paddingLeft: '3.75rem',
+      paddingRight: '3.125rem',
       paddingTop: '3.75rem',
-      paddingRight: '3.125rem', 
-      paddingBottom: '3.75rem',
-      paddingLeft: '3.75rem'
+      paddingBottom: '3.75rem'
     }}
   >
-    <div className="mb-4 text-green-600">
+    <div className="text-green-600" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
       {React.cloneElement(icon, { className: "w-10 h-10 sm:w-12 sm:h-12" })}
     </div>
-    <h3 className="text-[17px] sm:text-[19px] md:text-[20px] font-bold text-[#111827] mb-3 sm:mb-4">
+    <h3 className="text-[17px] sm:text-[19px] md:text-[20px] font-bold text-[#111827] text-center">
       {title}
     </h3>
     <p 
-      className="text-[#828282] text-justify"
+      className="text-[#828282] text-justify flex-1"
       style={{
         fontFamily: 'Inter, sans-serif',
         fontSize: '1rem',
         lineHeight: '1.5rem',
-        marginBottom: '1.875rem'
+        display: 'flex',
+        alignItems: 'flex-start',
+        justifyContent: 'center'
       }}
     >
       {desc}
@@ -83,30 +95,36 @@ const MediumCard = ({ icon, title, desc }) => (
   <article
     className="
       bg-white rounded-2xl shadow-md
-      flex flex-col items-center text-center
       w-full max-w-[520px] mx-auto
       lg:w-[379.99px] lg:h-[413.6px]
     "
     style={{
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+      gap: '1rem',
+      paddingLeft: '3.75rem',
+      paddingRight: '3.125rem',
       paddingTop: '3.75rem',
-      paddingRight: '3.125rem', 
-      paddingBottom: '3.75rem',
-      paddingLeft: '3.75rem'
+      paddingBottom: '3.75rem'
     }}
   >
-    <div className="mb-4 text-green-600">
+    <div className="text-green-600" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
       {React.cloneElement(icon, { className: "w-10 h-10 sm:w-12 sm:h-12" })}
     </div>
-    <h3 className="text-[17px] sm:text-[19px] md:text-[20px] font-bold text-[#111827] mb-3 sm:mb-4">
+    <h3 className="text-[17px] sm:text-[19px] md:text-[20px] font-bold text-[#111827] text-center">
       {title}
     </h3>
     <p 
-      className="text-[#828282] text-justify"
+      className="text-[#828282] text-justify flex-1"
       style={{
         fontFamily: 'Inter, sans-serif',
         fontSize: '1rem',
         lineHeight: '1.5rem',
-        marginBottom: '1.875rem'
+        display: 'flex',
+        alignItems: 'flex-start',
+        justifyContent: 'center'
       }}
     >
       {desc}
@@ -483,12 +501,11 @@ const IndustrialCommercial = () => {
                 Why Choose An Industrial Rooftop Solar Power System For Your Business?
               </h2>
               <p 
-                className="text-[#000000] mb-5 text-left"
+                className="text-[#000000] text-left"
                 style={{
                   fontFamily: 'Inter, sans-serif',
                   fontSize: '1rem',
-                  lineHeight: '1.5rem',
-                  margin: '0 0 0.3125rem'
+                  lineHeight: '1.5rem'
                 }}
               >
                 Industries like manufacturing, food processing, fabrication, and others require high electricity demands. Industrial rooftop solar power systems offer a renewable and cost-effective alternative to thermal power. Businesses benefit significantly from industrial rooftop solar installations.
@@ -545,12 +562,11 @@ const IndustrialCommercial = () => {
                 How Businesses Can Utilize Industrial Solar Power System?
               </h2>
               <p 
-                className="text-[#000000] mb-5 text-left"
+                className="text-[#000000] text-left"
                 style={{
                   fontFamily: 'Inter, sans-serif',
                   fontSize: '1rem',
                   lineHeight: '1.5rem',
-                  margin: '0 0 0.3125rem',
                   textAlign: 'center'
                 }}
               >

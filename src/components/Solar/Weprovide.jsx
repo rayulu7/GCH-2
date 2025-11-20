@@ -67,18 +67,22 @@ export default function Weprovide({ type = "residential" }) {
                   )}
                 </div>
 
-                <div className="w-full flex justify-center">
+                <div className="w-full" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1.125rem', paddingTop: '0.6875rem' }}>
                   <button
                     onClick={() => toggle(c.id)}
                     className="rounded-md text-white font-semibold transition-transform duration-200 hover:scale-[1.02] active:scale-[0.99]"
                     style={{
                       background: GREEN,
-                      padding: "0.375rem 0.75rem",
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      paddingLeft: "0.75rem",
+                      paddingRight: "0.75rem",
+                      paddingTop: "0.375rem",
+                      paddingBottom: "0.375rem",
                       borderStyle: "solid",
                       borderWidth: "0.05rem",
-                      borderColor: GREEN,
-                      marginTop: "0.6875rem",
-                      marginBottom: "1.125rem",
+                      borderColor: GREEN
                     }}
                   >
                     {expanded ? "Read Less" : "Read More"}

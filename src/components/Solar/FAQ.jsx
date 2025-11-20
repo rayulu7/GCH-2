@@ -46,10 +46,13 @@ const FAQ = () => {
               className="bg-white rounded-lg shadow-md border border-gray-200 w-full"
               style={{
                 minHeight: '59.2px',
-                paddingTop: '1rem',
-                paddingRight: '1.25rem',
-                paddingBottom: '1rem',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '1rem',
                 paddingLeft: '1.25rem',
+                paddingRight: '1.25rem',
+                paddingTop: '1rem',
+                paddingBottom: '1rem',
                 fontSize: '1rem',
                 fontWeight: '600',
                 color: openId === faq.id ? '#3A954F' : 'var(--tp-heading-primary)',
@@ -77,9 +80,11 @@ const FAQ = () => {
               
               {openId === faq.id && (
                 <div 
-                  className="mt-4"
                   style={{
-                    padding: '0 0 1.25rem 0',
+                    display: 'flex',
+                    alignItems: 'flex-start',
+                    justifyContent: 'flex-start',
+                    paddingBottom: '1.25rem',
                     color: '#828282',
                     fontSize: '0.875rem',
                     fontFamily: 'Inter, sans-serif',

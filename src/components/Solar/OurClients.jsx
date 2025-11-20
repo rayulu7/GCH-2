@@ -44,7 +44,9 @@ const OurClients = () => {
                 style={{ 
                   border: 'none', 
                   outline: 'none',
-                  margin: '0.3125rem 0 0 0'
+                  display: 'flex',
+                  alignItems: 'flex-start',
+                  justifyContent: 'center'
                 }}
               />
             </div>

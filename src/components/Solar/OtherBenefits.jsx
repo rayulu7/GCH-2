@@ -193,12 +193,15 @@ export default function OtherBenefits({ type = "residential", tabbedItems, listI
               {benefits.map((benefit) => (
                 <div
                   key={benefit.id}
-                  className="w-full mb-6 bg-white rounded-lg p-6"
+                  className="w-full bg-white rounded-lg"
                   style={{
-                    display: "block",
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: "1.5rem",
                     width: "100%",
-                    marginBottom: "1.5rem",
-                    clear: "both",
+                    padding: "1.5rem"
                   }}
                 >
                   <div className="text-center">

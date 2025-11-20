@@ -50,13 +50,15 @@ const GCHBenefits = () => {
         </motion.h2>
 
         <motion.p
-          className="text-left mx-auto mb-12"
+          className="text-left mx-auto"
           style={{
             fontSize: '1.1rem',
             lineHeight: '1.6',
             color: '#555555',
             fontFamily: 'Inter, sans-serif',
-            margin: '0 0 1.5rem',
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '1.5rem',
             width: '100%',
             maxWidth: '75rem'
           }}
@@ -103,7 +105,6 @@ const GCHBenefits = () => {
                 className="benefit-icon"
                 style={{
                   color: '#059669',
-                  marginBottom: '1rem',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center'
@@ -125,7 +126,9 @@ const GCHBenefits = () => {
                   fontWeight: '600',
                   fontSize: '1rem',
                   textAlign: 'center',
-                  margin: '0',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
                   lineHeight: '1.2'
                 }}
                 whileHover={{
@@ -144,13 +147,15 @@ const GCHBenefits = () => {
 
         {}
         <motion.p
-          className="text-left mx-auto mt-12"
+          className="text-left mx-auto"
           style={{
             fontSize: '1.1rem',
             lineHeight: '1.6',
             color: '#555555',
             fontFamily: 'Inter, sans-serif',
-            margin: '0 0 1.5rem',
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '1.5rem',
             width: '100%',
             maxWidth: '75rem'
           }}

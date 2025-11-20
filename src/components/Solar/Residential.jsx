@@ -43,12 +43,14 @@ const ResidentialBenefitsSection = () => {
               Benefits of Choosing Rooftop Solar Power for Homes
             </h2>
             <p
-              className="text-[#000000] mb-5 text-left"
+              className="text-[#000000] text-left"
               style={{
                 fontFamily: 'Inter, sans-serif',
                 fontSize: '1rem',
                 lineHeight: '1.5rem',
-                margin: '0 0 0.3125rem'
+                display: 'flex',
+                alignItems: 'flex-start',
+                justifyContent: 'flex-start'
               }}
             >
               Residential Rooftop Solar Panels have become more efficient and affordable with its vast benefits and government subsidies, making them a viable option for various types of homes, from single-family houses to multi-unit dwellings. Rooftop solar panel installation in Hyderabad not only helps you get free electricity but also helps you to earn money on each unit your solar power system produces.
