@@ -45,7 +45,7 @@ const FAQ = () => {
               key={faq.id}
               className="bg-white rounded-lg shadow-md border border-gray-200 w-full"
               style={{
-                minHeight: '59.2px',
+                minHeight: '58.2px',
                 display: 'flex',
                 flexDirection: 'column',
                 gap: '1rem',
