@@ -91,7 +91,7 @@ const FAQ = () => {
                     lineHeight: '1.5'
                   }}
                 >
-                  <p className="text-[14px] sm:text-[15px] md:text-[16px] leading-relaxed">
+                  <p className="text-[1.1rem] sm:text-[1.2rem] md:text-[1.2rem] leading-relaxed">
                     {faq.answer}
                   </p>
                 </div>
