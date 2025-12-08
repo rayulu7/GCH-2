@@ -14,36 +14,30 @@ const TopCard = ({ icon, title, desc }) => (
   <article
     className="
       bg-white rounded-2xl shadow-md
+      flex flex-col items-center text-center
       w-full max-w-[520px] mx-auto
       lg:w-[379.99px] lg:h-[413.6px]
     "
     style={{
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      justifyContent: 'center',
-      gap: '1rem',
-      paddingLeft: '3.75rem',
-      paddingRight: '3.125rem',
-      paddingTop: '3.75rem',
-      paddingBottom: '3.75rem'
+      paddingTop: '60px',
+      paddingRight: '50px', 
+      paddingBottom: '60px',
+      paddingLeft: '60px'
     }}
   >
-    <div className="text-green-600" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+    <div className="mb-4 text-green-600">
       {React.cloneElement(icon, { className: "w-10 h-10 sm:w-12 sm:h-12" })}
     </div>
-    <h3 className="text-[17px] sm:text-[19px] md:text-[20px] font-bold text-[#111827] text-center">
+    <h3 className="text-[17px] sm:text-[19px] md:text-[20px] font-bold text-[#111827] mb-3 sm:mb-4">
       {title}
     </h3>
     <p 
-      className="text-[#828282] text-justify flex-1"
+      className="text-[#828282] text-justify"
       style={{
         fontFamily: 'Inter, sans-serif',
-        fontSize: '1rem',
-        lineHeight: '1.5rem',
-        display: 'flex',
-        alignItems: 'flex-start',
-        justifyContent: 'center'
+        fontSize: '16px',
+        lineHeight: '24px',
+        marginBottom: '30px'
       }}
     >
       {desc}
@@ -110,7 +104,7 @@ const HousingSociety = () => {
         <div 
           className="hidden lg:block absolute inset-0 z-0"
           style={{
-            backgroundImage: "url('/bg_banner.jpeg')",
+            backgroundImage: "url('/housing-society-solar.jpg')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat"
@@ -124,7 +118,7 @@ const HousingSociety = () => {
         <div 
           className="block lg:hidden relative min-h-screen"
           style={{
-            backgroundImage: "url('/bg_banner.jpeg')",
+            backgroundImage: "url('/housing-society-solar.jpg')",
             backgroundSize: "cover",
             backgroundPosition: "30% center",
             backgroundRepeat: "no-repeat"
@@ -238,7 +232,7 @@ const HousingSociety = () => {
                   <button
                     type="submit"
                     className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-semibold px-12 py-4 shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 text-base min-w-[200px]"
-                    style={{ borderRadius: '0.3125rem' }}
+                    style={{ borderRadius: '5px' }}
                   >
                     Send Message
                   </button>
@@ -353,7 +347,7 @@ const HousingSociety = () => {
                   <button
                     type="submit"
                     className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-semibold px-8 sm:px-12 py-3 sm:py-4 shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 text-sm sm:text-base min-w-[160px] sm:min-w-[200px]"
-                    style={{ borderRadius: '0.3125rem' }}
+                    style={{ borderRadius: '5px' }}
                   >
                     Send Message
                   </button>
@@ -364,7 +358,38 @@ const HousingSociety = () => {
         </div>
       </div>
       
-      <CTAButtons />
+      <section className="w-full bg-white py-16">
+        <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
+          <div className="flex justify-center items-center gap-4 flex-wrap">
+            <button 
+              onClick={() => {
+                navigate('/solar-installation');
+                setTimeout(() => {
+                  const element = document.getElementById('subsidy-structure');
+                  if (element) element.scrollIntoView({ behavior: 'smooth' });
+                }, 100);
+              }}
+              className="bg-[#3A954F] hover:bg-[#2d7a3d] text-white px-12 py-4 rounded-full text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg"
+              style={{ borderRadius: '25px' }}
+            >
+              AVAIL SUBSIDY
+            </button>
+            <button 
+              onClick={() => {
+                navigate('/solar-installation');
+                setTimeout(() => {
+                  const element = document.getElementById('our-finance-options');
+                  if (element) element.scrollIntoView({ behavior: 'smooth' });
+                }, 100);
+              }}
+              className="bg-[#3A954F] hover:bg-[#2d7a3d] text-white px-12 py-4 rounded-full text-lg font-semibold transition-all duration-300 hover:scale-105 shadow-lg"
+              style={{ borderRadius: '25px' }}
+            >
+              VIEW FINANCE OPTIONS
+            </button>
+          </div>
+        </div>
+      </section>
       
       <section className="w-full bg-gray-50 py-16">
         <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
@@ -376,8 +401,8 @@ const HousingSociety = () => {
               className="text-[#333333] text-left max-w-4xl mx-auto"
               style={{
                 fontFamily: 'Inter, sans-serif',
-                fontSize: '1rem',
-                lineHeight: '1.5rem'
+                fontSize: '16px',
+                lineHeight: '24px'
               }}
             >
               Solar is playing a crucial role in changing the global energy landscape. The evolution of solar energy is fast changing the face of many cities and towns. Earlier, installing solar panels on roofs was expensive and not even much efficient. But now they are affordable and highly efficient, which has increased its applications and importance.
@@ -390,15 +415,16 @@ const HousingSociety = () => {
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[120px]">
           <div className="mx-auto w-full lg:w-[1200px]">
             <div className="text-center mb-8 sm:mb-10 md:mb-12">
-              <h2 className="text-[24px] sm:text-[28px] md:text-[32px] font-bold text-[#333333] mb-4">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#333333] mb-4">
                 Benefits of Choosing A Rooftop Solar Power System For Housing Society?
               </h2>
               <p 
-                className="text-[#000000] text-left"
+                className="text-[#000000] mb-5 text-left"
                 style={{
                   fontFamily: 'Inter, sans-serif',
-                  fontSize: '1rem',
-                  lineHeight: '1.5rem'
+                  fontSize: '16px',
+                  lineHeight: '24px',
+                  margin: '0px 0px 5px'
                 }}
               >
                 Housing Socieity's Maintenance associations can halt the fixed expenditure and also avail power at a fixed cost for atleast 25 years by switching over to rooftop solar power system, and at the same time they can get environment friendly power. Associations has to incur heavy monthly expenditure to maintain the power needs of common areas like lifts, corridors, water supply, lighting etc. Not only they charged as per commercial rates, they are also subject to periodical upward revision. Benefits of choosing a rooftop solar power system for housing society includes
@@ -406,7 +432,7 @@ const HousingSociety = () => {
             </div>
 
             <div className="flex flex-col lg:flex-row items-start lg:items-center gap-6 lg:gap-10">
-              <div className="w-full lg:w-[380px] flex flex-col gap-4 lg:mt-4">
+              <div className="w-full lg:w-[380px] flex flex-col gap-4 lg:mt-4 max-h-[520px] overflow-y-auto pr-1">
                 {housingBenefits.map((benefit) => {
                   const isActive = activeHousingBenefit.id === benefit.id;
                   return (
@@ -425,21 +451,19 @@ const HousingSociety = () => {
                 })}
               </div>
 
-              <div className="w-full flex-1">
-                <div className="bg-white rounded-3xl shadow-lg p-8 sm:p-10 lg:p-12 min-h-[360px] flex flex-col items-center text-center justify-center">
-                  <div className="mb-6">
-                    {React.cloneElement(activeHousingBenefit.icon, {
-                      className: "w-16 h-16 sm:w-20 sm:h-20 text-green-600"
-                    })}
-                  </div>
-                  <h3 className="text-2xl sm:text-3xl font-bold text-[#111827] mb-4">
-                    {activeHousingBenefit.title}
-                  </h3>
-                  <p className="text-base sm:text-lg text-[#333333] leading-relaxed">
-                    {activeHousingBenefit.desc}
-                  </p>
+            <div className="w-full flex-1 min-w-0">
+              <div className="bg-white rounded-3xl shadow-lg p-6 sm:p-8 lg:p-10 xl:p-12 min-h-[360px] flex flex-col items-center text-center justify-center">
+                <div className="mb-6">
+                  {React.cloneElement(activeHousingBenefit.icon, { className: "w-16 h-16 sm:w-20 sm:h-20 text-green-600" })}
                 </div>
+                <h3 className="text-2xl sm:text-3xl font-bold text-[#111827] mb-4">
+                  {activeHousingBenefit.title}
+                </h3>
+                <p className="text-base sm:text-lg text-[#333333] leading-relaxed">
+                  {activeHousingBenefit.desc}
+                </p>
               </div>
+            </div>
             </div>
           </div>
         </div>

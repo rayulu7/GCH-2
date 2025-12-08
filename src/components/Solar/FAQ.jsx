@@ -45,15 +45,12 @@ const FAQ = () => {
               key={faq.id}
               className="bg-white rounded-lg shadow-md border border-gray-200 w-full"
               style={{
-                minHeight: '58.2px',
-                display: 'flex',
-                flexDirection: 'column',
-                gap: '1rem',
-                paddingLeft: '1.25rem',
-                paddingRight: '1.25rem',
-                paddingTop: '1rem',
-                paddingBottom: '1rem',
-                fontSize: '1rem',
+                minHeight: '59.2px',
+                paddingTop: '16px',
+                paddingRight: '20px',
+                paddingBottom: '16px',
+                paddingLeft: '20px',
+                fontSize: '16px',
                 fontWeight: '600',
                 color: openId === faq.id ? '#3A954F' : 'var(--tp-heading-primary)',
                 transition: 'all 0.3s ease'
@@ -80,18 +77,16 @@ const FAQ = () => {
               
               {openId === faq.id && (
                 <div 
+                  className="mt-4"
                   style={{
-                    display: 'flex',
-                    alignItems: 'flex-start',
-                    justifyContent: 'flex-start',
-                    paddingBottom: '1.25rem',
+                    padding: '0px 0px 20px 0px',
                     color: '#828282',
-                    fontSize: '0.875rem',
+                    fontSize: '14px',
                     fontFamily: 'Inter, sans-serif',
                     lineHeight: '1.5'
                   }}
                 >
-                  <p className="text-[1.1rem] sm:text-[1.2rem] md:text-[1.2rem] leading-relaxed">
+                  <p className="text-[14px] sm:text-[15px] md:text-[16px] leading-relaxed">
                     {faq.answer}
                   </p>
                 </div>

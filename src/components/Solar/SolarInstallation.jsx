@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import React, { useState } from "react";
 import SolarHeroSection from "./SolarHeroSection.jsx";
 import CTAButtons from "./CTAButtons.jsx";
 import InstallationServices from "./InstallationServices.jsx";
@@ -66,58 +65,6 @@ function SolarInstallation() {
     loanTerm: 0.5,
     activeTab: "residential"
   });
-  const location = useLocation();
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    const targetId = location.state?.scrollTo;
-    if (!targetId) {
-      return;
-    }
-
-    let attempts = 0;
-    let timeoutId;
-    let isCancelled = false;
-
-    const headerOffset = 120;
-
-    const tryScroll = () => {
-      if (isCancelled) {
-        return;
-      }
-
-      const element = document.getElementById(targetId);
-      if (element) {
-        const elementPosition = element.getBoundingClientRect().top + window.scrollY;
-        const offsetPosition = elementPosition - headerOffset;
-
-        window.scrollTo({
-          top: offsetPosition >= 0 ? offsetPosition : 0,
-          behavior: "smooth"
-        });
-
-        navigate(location.pathname, { replace: true, state: null });
-        return;
-      }
-
-      if (attempts >= 8) {
-        navigate(location.pathname, { replace: true, state: null });
-        return;
-      }
-
-      attempts += 1;
-      timeoutId = window.setTimeout(tryScroll, 120);
-    };
-
-    tryScroll();
-
-    return () => {
-      isCancelled = true;
-      if (timeoutId) {
-        window.clearTimeout(timeoutId);
-      }
-    };
-  }, [location, navigate]);
 
   return (
     <div className="min-w-0 w-full overflow-x-hidden">

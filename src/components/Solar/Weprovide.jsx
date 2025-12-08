@@ -35,7 +35,7 @@ export default function Weprovide({ type = "residential" }) {
   return (
     <section className="w-full bg-[#EAF3ED]">
       <div className="mx-auto max-w-[1200px] px-[15px]">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-[#111827] pt-[100px] pb-[100px]">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-[#111827] pt-[100px] pb-[100px]">
           We Provide
         </h2>
 
@@ -67,22 +67,18 @@ export default function Weprovide({ type = "residential" }) {
                   )}
                 </div>
 
-                <div className="w-full" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1.125rem', paddingTop: '0.6875rem' }}>
+                <div className="w-full flex justify-center">
                   <button
                     onClick={() => toggle(c.id)}
                     className="rounded-md text-white font-semibold transition-transform duration-200 hover:scale-[1.02] active:scale-[0.99]"
                     style={{
                       background: GREEN,
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      paddingLeft: "0.75rem",
-                      paddingRight: "0.75rem",
-                      paddingTop: "0.375rem",
-                      paddingBottom: "0.375rem",
+                      padding: "6px 12px",
                       borderStyle: "solid",
-                      borderWidth: "0.05rem",
-                      borderColor: GREEN
+                      borderWidth: "0.8px",
+                      borderColor: GREEN,
+                      marginTop: "11px",
+                      marginBottom: "18px",
                     }}
                   >
                     {expanded ? "Read Less" : "Read More"}

@@ -540,9 +540,9 @@ const AboutUs = () => {
         
         .tp-about-icon-space {
           border-radius: 50%;
-          padding: 0.625rem;
+          padding: 10px;
           background-color: white;
-          box-shadow: 0 1.25rem 1.875rem 0 rgba(3, 4, 28, 0.1);
+          box-shadow: 0 20px 30px 0 rgba(3, 4, 28, 0.1);
         }
         
         .position-middle {

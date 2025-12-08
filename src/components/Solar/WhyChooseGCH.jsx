@@ -51,7 +51,7 @@ const WhyChooseGCH = () => {
     <section className="bg-white py-16 px-5 md:px-10 lg:px-20 overflow-x-hidden">
       <div className="max-w-7xl mx-auto text-center">
         {}
-        <h2 className="text-gray-900 font-extrabold text-2xl sm:text-3xl md:text-4xl leading-snug mb-6">
+        <h2 className="text-gray-900 font-bold text-3xl md:text-4xl lg:text-5xl leading-snug mb-6">
           Why Choose{" "}
           <span className="text-green-600">GreenCarbonHub</span> for Your
           Rooftop Solar Power Project?

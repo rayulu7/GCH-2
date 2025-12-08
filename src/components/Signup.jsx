@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { useAuth } from '../contexts/AuthContext';
+import { useAuth } from '../hooks/useAuth';
 import { Eye, EyeOff, Mail, Lock, User, Phone } from 'lucide-react';
 import { createUser, findUserByEmail } from '../utils/userStorage';
 
@@ -51,7 +51,7 @@ const Signup = () => {
 
     if (!formData.phone) {
       newErrors.phone = 'Phone number is required';
-    } else if (!/^[\+]?[1-9][\d]{0,15}$/.test(formData.phone.replace(/\s/g, ''))) {
+    } else if (!/^[+]?[1-9][\d]{0,15}$/.test(formData.phone.replace(/\s/g, ''))) {
       newErrors.phone = 'Phone number is invalid';
     }
 
@@ -105,7 +105,7 @@ const Signup = () => {
       
       login(loginUserData);
       navigate('/');
-    } catch (error) {
+    } catch (_error) {
       setErrors({ general: 'An error occurred during signup. Please try again.' });
     } finally {
       setIsLoading(false);
@@ -116,7 +116,7 @@ const Signup = () => {
     setIsLoading(true);
     try {
       
-      const clientId = process.env.REACT_APP_GOOGLE_CLIENT_ID;
+      const clientId = import.meta.env.VITE_GOOGLE_CLIENT_ID;
       if (!clientId || clientId === 'your-google-client-id') {
         
         await handleGoogleDemo();
@@ -218,7 +218,7 @@ const Signup = () => {
     setIsLoading(true);
     try {
       
-      const appId = process.env.REACT_APP_FACEBOOK_APP_ID;
+      const appId = import.meta.env.VITE_FACEBOOK_APP_ID;
       if (!appId || appId === 'your-facebook-app-id') {
         
         await handleFacebookDemo();

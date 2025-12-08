@@ -65,7 +65,7 @@ export default function FinanceOptions() {
   }, []);
 
   return (
-    <section id="our-finance-options" className={`w-full bg-[#3A954F] pt-12 sm:pt-16 md:pt-20 lg:pt-[100px] pb-12 sm:pb-16 md:pb-20 lg:pb-[70px] transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
+    <section  className={`w-full bg-[#3A954F] pt-12 sm:pt-16 md:pt-20 lg:pt-[100px] pb-12 sm:pb-16 md:pb-20 lg:pb-[70px] transition-opacity duration-1000 ${isVisible ? 'opacity-100' : 'opacity-0'}`}>
       {}
       <div className="mx-auto max-w-7xl px-4 md:px-8 lg:px-16">
         {}

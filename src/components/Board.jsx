@@ -26,14 +26,6 @@ const Board = () => {
 
   ];
 
-  const expertiseAreas = [
-    { name: "Policy & Governance", count: 1, color: "from-purple-500 to-purple-600" },
-    { name: "Technology Innovation", count: 1, color: "from-blue-500 to-blue-600" },
-    { name: "Business Strategy", count: 1, color: "from-green-500 to-green-600" },
-    { name: "Environmental Impact", count: 1, color: "from-orange-500 to-orange-600" },
-    { name: "Financial Planning", count: 1, color: "from-red-500 to-red-600" },
-    { name: "Research & Development", count: 1, color: "from-indigo-500 to-indigo-600" }
-  ];
 
   useEffect(() => {
     const headerObserver = new IntersectionObserver(

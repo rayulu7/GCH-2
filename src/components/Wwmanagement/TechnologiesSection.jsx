@@ -45,8 +45,8 @@ const TechnologiesSection = () => {
   return (
     <section className="w-full bg-[#EBF3ED] py-10 sm:py-12 md:py-14 overflow-x-hidden">
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-16">
-        <div className="text-center mb-8 sm:mb-10 md:mb-12">
-          <h2 className="text-[24px] sm:text-[28px] md:text-[32px] font-bold text-[#333333] mb-2">
+        <div className="text-center mb-8 md:mb-12">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#333333] mb-8 md:mb-12">
             Technologies Used in Effluent/Sewage Treatment Plants
           </h2>
           <p className="text-[14px] sm:text-[16px] md:text-[18px] text-[#555555]">

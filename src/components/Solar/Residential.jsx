@@ -6,6 +6,7 @@ import WhyChooseGCH from "./WhyChooseGCH.jsx";
 import FAQ from "./FAQ.jsx";
 import OurClients from "./OurClients.jsx";
 import OtherBenefits from "./OtherBenefits.jsx";
+import Subsidy from "./Subsidy.jsx";
 import WhatWeDo from "./WhatWeDo.jsx";
 import { Home, DollarSign, Leaf, Zap, Shield, Settings } from "lucide-react";
 import { useNavigate } from 'react-router-dom';
@@ -39,18 +40,16 @@ const ResidentialBenefitsSection = () => {
       <div className="max-w-[1440px] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[120px]">
         <div className="mx-auto w-full lg:w-[1200px]">
           <div className="text-center mb-8 sm:mb-10 md:mb-12">
-            <h2 className="text-[24px] sm:text-[28px] md:text-[32px] font-bold text-[#333333] mb-2">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#333333] mb-2">
               Benefits of Choosing Rooftop Solar Power for Homes
             </h2>
             <p
-              className="text-[#000000] text-left"
+              className="text-[#000000] mb-5 text-left"
               style={{
                 fontFamily: 'Inter, sans-serif',
-                fontSize: '1rem',
-                lineHeight: '1.5rem',
-                display: 'flex',
-                alignItems: 'flex-start',
-                justifyContent: 'flex-start'
+                fontSize: '16px',
+                lineHeight: '24px',
+                margin: '0px 0px 5px'
               }}
             >
               Residential Rooftop Solar Panels have become more efficient and affordable with its vast benefits and government subsidies, making them a viable option for various types of homes, from single-family houses to multi-unit dwellings. Rooftop solar panel installation in Hyderabad not only helps you get free electricity but also helps you to earn money on each unit your solar power system produces.
@@ -58,7 +57,7 @@ const ResidentialBenefitsSection = () => {
           </div>
 
           <div className="flex flex-col lg:flex-row items-start lg:items-center gap-6 lg:gap-10">
-            <div className="w-full lg:w-[380px] flex flex-col gap-4 lg:mt-4">
+            <div className="w-full lg:w-[380px] flex flex-col gap-4 lg:mt-4 max-h-[520px] overflow-y-auto pr-1">
               {residentialBenefits.map((benefit) => {
                 const isActive = activeBenefit.id === benefit.id;
                 return (
@@ -77,8 +76,8 @@ const ResidentialBenefitsSection = () => {
               })}
             </div>
 
-            <div className="w-full flex-1">
-              <div className="bg-white rounded-3xl shadow-lg p-8 sm:p-10 lg:p-12 min-h-[360px] flex flex-col items-center text-center justify-center">
+            <div className="w-full flex-1 min-w-0">
+              <div className="bg-white rounded-3xl shadow-lg p-6 sm:p-8 lg:p-10 xl:p-12 min-h-[360px] flex flex-col items-center text-center justify-center">
                 <div className="mb-6">
                   {React.cloneElement(activeBenefit.icon, { className: "w-16 h-16 sm:w-20 sm:h-20 text-green-600" })}
                 </div>
@@ -131,7 +130,7 @@ const ResidentialHeroSection = () => {
       <div 
         className="hidden lg:block absolute inset-0 z-0"
         style={{
-          backgroundImage: "url('/bg_banner.jpeg')",
+          backgroundImage: "url('/residential-solar.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat"
@@ -145,7 +144,7 @@ const ResidentialHeroSection = () => {
       <div 
         className="block lg:hidden relative min-h-screen"
         style={{
-          backgroundImage: "url('/bg_banner.jpeg')",
+          backgroundImage: "url('/residential-solar.jpg')",
           backgroundSize: "cover",
           backgroundPosition: "30% center",
           backgroundRepeat: "no-repeat"
@@ -252,7 +251,7 @@ const ResidentialHeroSection = () => {
                 <button
                   type="submit"
                   className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-semibold px-12 py-4 shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 text-base min-w-[200px]"
-                  style={{ borderRadius: '0.3125rem' }}
+                  style={{ borderRadius: '5px' }}
                 >
                   Send Message
                 </button>
@@ -360,7 +359,7 @@ const ResidentialHeroSection = () => {
                 <button
                   type="submit"
                   className="bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white font-semibold px-8 sm:px-12 py-3 sm:py-4 shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 text-sm sm:text-base min-w-[160px] sm:min-w-[200px]"
-                  style={{ borderRadius: '0.3125rem' }}
+                  style={{ borderRadius: '5px' }}
                 >
                   Send Message
                 </button>
@@ -379,12 +378,28 @@ const Residential = () => {
       <Navbar />
       <ResidentialHeroSection />
       <CTAButtons />
+      
       <ResidentialBenefitsSection />
+      
+      {}
       <OtherBenefits />
+      
+      {}
+      <Subsidy />
+      
+      {}
       <WhatWeDo />
+      
+      {}
       <WhySolarResidential />
+      
+      {}
       <WhyChooseGCH />
+      
+      {}
       <FAQ />
+      
+      {}
       <OurClients />
     </div>
   );

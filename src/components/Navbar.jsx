@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { ChevronDown, Menu, X, LogOut, User } from "lucide-react";
-import { useAuth } from "../contexts/AuthContext";
+import { useAuth } from "../hooks/useAuth";
 
 const Navbar = () => {
   const [isInstallationDropdownOpen, setIsInstallationDropdownOpen] = useState(false);
@@ -83,14 +83,17 @@ const Navbar = () => {
     <header className="fixed top-0 left-0 right-0 z-50 px-4 sm:px-6 lg:px-8 py-3 md:py-4 bg-white shadow-md">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center space-x-2 sm:space-x-3">
-          <div>
-            <h1 className="text-lg sm:text-xl md:text-2xl font-bold">
-              <span className="text-green-600">Green</span>
-              <span className="text-orange-500">Carbon</span>
-              <span className="text-gray-800">Hub</span>
-            </h1>
-            <p className="text-xs sm:text-sm text-gray-600 hidden sm:block">Affordable Solutions</p>
-          </div>
+          <Link 
+            to="/" 
+            className="flex items-center"
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          >
+            <img 
+              src="/logo new.jpg" 
+              alt="GreenCarbonHub Logo" 
+              className="h-10 sm:h-12 md:h-14 w-auto object-contain cursor-pointer"
+            />
+          </Link>
         </div>
 
         <nav className="hidden lg:flex items-center space-x-4 xl:space-x-6 absolute left-1/2 transform -translate-x-1/2">

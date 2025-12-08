@@ -9,7 +9,7 @@ const HomeServicesSection = () => {
     {
       id: 1,
       title: 'Maintenance',
-      image: 'https://images.pexels.com/photos/2800832/pexels-photo-2800832.jpeg?auto=compress&cs=tinysrgb&w=400&h=300&dpr=1',
+      image: '/maitntence.jpg',
       content: 'Keep your system at peak efficiency with our predictive maintenance solutions. Ensure maximum output through regular cleaning and professional up-keep. Rely on our expert maintenance services for long lasting worry-free performance.',
       link: '/maintenance'
     },
@@ -77,7 +77,7 @@ const HomeServicesSection = () => {
               
               
               <div className="relative bg-white rounded-xl shadow-md border border-gray-200 flex flex-col items-center px-4 sm:px-6 py-6 sm:py-8 transition-all duration-200 hover:shadow-xl hover:-translate-y-1 w-full max-w-sm sm:max-w-md mx-auto group mb-6"
-                style={{ minHeight: '20rem' }}
+                style={{ minHeight: '320px' }}
               >
                 <div className="flex flex-col items-center w-full z-10 relative flex-1">
                   <div className="flex justify-center items-center mb-4 sm:mb-6 w-full">

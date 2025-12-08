@@ -23,13 +23,13 @@ const FloatingActionButtons = () => {
         __html: `
           .floating-buttons-container {
             position: fixed !important;
-            bottom: 1.25rem !important;
-            right: 1.25rem !important;
+            bottom: 20px !important;
+            right: 20px !important;
             z-index: 99999999 !important;
             pointer-events: auto !important;
             display: flex !important;
             flex-direction: column !important;
-            gap: 0.75rem !important;
+            gap: 12px !important;
             transform: translateZ(0) !important;
             -webkit-transform: translateZ(0) !important;
             will-change: transform !important;
@@ -37,15 +37,15 @@ const FloatingActionButtons = () => {
             contain: layout style paint !important;
             -webkit-backface-visibility: hidden !important;
             backface-visibility: hidden !important;
-            -webkit-perspective: 62.5rem !important;
-            perspective: 62.5rem !important;
+            -webkit-perspective: 1000px !important;
+            perspective: 1000px !important;
           }
           
           @media (max-width: 1024px) {
             .floating-buttons-container {
               position: fixed !important;
-              bottom: 5.625rem !important;
-              right: 0.9375rem !important;
+              bottom: 90px !important;
+              right: 15px !important;
               z-index: 99999999 !important;
               transform: translateZ(0) !important;
               -webkit-transform: translateZ(0) !important;
@@ -53,8 +53,8 @@ const FloatingActionButtons = () => {
               contain: layout style paint !important;
               -webkit-backface-visibility: hidden !important;
               backface-visibility: hidden !important;
-              -webkit-perspective: 62.5rem !important;
-              perspective: 62.5rem !important;
+              -webkit-perspective: 1000px !important;
+              perspective: 1000px !important;
               -webkit-transform: translate3d(0, 0, 0) !important;
               transform: translate3d(0, 0, 0) !important;
             }
@@ -62,8 +62,8 @@ const FloatingActionButtons = () => {
           
           @media (max-width: 768px) {
             .floating-buttons-container {
-              bottom: 6.5625rem !important;
-              right: 0.9375rem !important;
+              bottom: 105px !important;
+              right: 15px !important;
               position: fixed !important;
               z-index: 99999999 !important;
               transform: translate3d(0, 0, 0) !important;
@@ -77,8 +77,8 @@ const FloatingActionButtons = () => {
           
           @media (max-width: 480px) {
             .floating-buttons-container {
-              bottom: 7.5rem !important;
-              right: 0.625rem !important;
+              bottom: 120px !important;
+              right: 10px !important;
               position: fixed !important;
               z-index: 99999999 !important;
               transform: translate3d(0, 0, 0) !important;
@@ -100,8 +100,8 @@ const FloatingActionButtons = () => {
       <button
         onClick={handleWhatsApp}
         style={{
-          width: '3.5rem',
-          height: '3.5rem',
+          width: '56px',
+          height: '56px',
           backgroundColor: '#25D366',
           color: 'white',
           borderRadius: '50%',
@@ -130,8 +130,8 @@ const FloatingActionButtons = () => {
       <button
         onClick={handlePhone}
         style={{
-          width: '3.5rem',
-          height: '3.5rem',
+          width: '56px',
+          height: '56px',
           backgroundColor: '#03fcec',
           color: 'white',
           borderRadius: '50%',
@@ -160,8 +160,8 @@ const FloatingActionButtons = () => {
       <button
         onClick={handleChatbot}
         style={{
-          width: '3.5rem',
-          height: '3.5rem',
+          width: '56px',
+          height: '56px',
           backgroundColor: '#2a27da',
           color: 'white',
           borderRadius: '50%',

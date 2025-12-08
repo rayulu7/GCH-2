@@ -32,6 +32,7 @@ import Login from "./Login.jsx";
 import Signup from "./Signup.jsx";
 import ForgotPassword from "./ForgotPassword.jsx";
 import ProtectedRoute from "./ProtectedRoute.jsx";
+import Blog from "./Blog/Blog.jsx";
 import { AuthProvider } from "../contexts/AuthContext.jsx";
 
 function ScrollToTop() {
@@ -94,7 +95,7 @@ function HomePage() {
       <WhyGCHSection />
       <Installations />
       <HomeServicesSection />
-      <Clients />
+      <OurClients />
       <Team />
       {/* <Board /> */}
       <Contact />
@@ -222,6 +223,7 @@ function App() {
               <Signup />
             </ProtectedRoute>
           } />
+          <Route path="/blog" element={<Blog />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
         </Routes>
         <FloatingActionButtons />

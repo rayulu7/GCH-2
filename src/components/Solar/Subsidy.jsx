@@ -6,7 +6,13 @@ export default function Subsidy() {
       {}
       <div className="mx-auto max-w-[1440px]">
         {}
-        <div className="flex flex-col lg:flex-row items-center justify-center py-8 md:py-12 lg:py-16 px-4 md:px-8 lg:px-16 gap-8 lg:gap-0">
+        <div className="text-center pt-8 md:pt-10 px-4 md:px-8 lg:px-16 pb-4">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#111827]">
+            Avail Subsidy
+          </h1>
+        </div>
+        {}
+        <div className="flex flex-col lg:flex-row items-center justify-center pb-8 md:pb-12 lg:pb-16 px-4 md:px-8 lg:px-16 gap-8 lg:gap-0">
           {}
           <div className="w-full lg:w-auto pt-[15px] pr-[15px] pb-[15px] flex justify-center lg:justify-start">
             <img

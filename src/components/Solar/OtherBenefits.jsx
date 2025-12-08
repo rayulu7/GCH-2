@@ -110,7 +110,7 @@ const TabbedBenefitsSection = ({ items = [] }) => {
     >
       <div className="mx-auto max-w-7xl px-4 md:px-8 lg:px-16">
         <div className="text-center mb-8 sm:mb-12 md:mb-16">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-[32px] font-bold text-[#111827]">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#111827]">
             Other Benefits
           </h2>
         </div>
@@ -127,7 +127,7 @@ const TabbedBenefitsSection = ({ items = [] }) => {
                       ? "bg-[#3A954F] text-white"
                       : "bg-white text-[#828282] hover:bg-gray-50"
                   }`}
-                  style={{ borderRadius: "0.625rem" }}
+                  style={{ borderRadius: "10px" }}
                 >
                   {item.title}
                 </button>
@@ -193,15 +193,12 @@ export default function OtherBenefits({ type = "residential", tabbedItems, listI
               {benefits.map((benefit) => (
                 <div
                   key={benefit.id}
-                  className="w-full bg-white rounded-lg"
+                  className="w-full mb-6 bg-white rounded-lg p-6"
                   style={{
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    gap: "1.5rem",
+                    display: "block",
                     width: "100%",
-                    padding: "1.5rem"
+                    marginBottom: "24px",
+                    clear: "both",
                   }}
                 >
                   <div className="text-center">

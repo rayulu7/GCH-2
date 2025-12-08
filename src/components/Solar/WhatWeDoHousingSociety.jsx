@@ -41,7 +41,7 @@ export default function WhatWeDoHousingSociety() {
     >
       <div className="mx-auto max-w-7xl px-4 md:px-8 lg:px-16">
         <div className="text-center mb-16">
-          <h2 className="text-[32px] font-bold text-[#111827] text-center">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[#111827] text-center">
             What We Do?
           </h2>
         </div>
