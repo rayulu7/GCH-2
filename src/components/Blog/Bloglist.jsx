@@ -120,7 +120,7 @@ export default function BlogList() {
                   <p className="text-gray-700 mb-4">{post.excerpt}</p>
                   <Link
                     to={`/blog/${post.id}`}
-                    className="text-orange-600 font-medium hover:underline"
+                    className="text-green-600 font-medium hover:underline"
                   >
                     Read More →
                   </Link>

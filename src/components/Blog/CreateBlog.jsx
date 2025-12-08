@@ -14,7 +14,7 @@ const CreateBlog = ({
   const [formData, setFormData] = useState(
     initialData || {
       title: '',
-      author: 'PCSCARE Admin',
+      author: 'GCH Admin',
       date: new Date().toISOString().split('T')[0],
       category: '',
       content: []
@@ -614,12 +614,11 @@ const CreateBlog = ({
                 >
                   <option value="">Select category</option>
                   <option value="Solar Installation">Solar Installation</option>
+                  <option value="Related to Solar Installation">Related to Solar Installation</option>
                   <option value="Water & Water Waste Management System">Water & Water Waste Management System</option>
                   <option value="Housing Society">Housing Society</option>
                   <option value="Industrial Sector">Industrial Sector</option>
                   <option value="Housing Sector">Housing Sector</option>
-                  <option value="Pest Control">Pest Control</option>
-                  <option value="Cleaning Services">Cleaning Services</option>
                   <option value="Maintenance">Maintenance</option>
                   <option value="Tips & Advice">Tips & Advice</option>
                 </select>
@@ -640,7 +639,7 @@ const CreateBlog = ({
           </div>
 
           
-          <div style={{position: 'fixed', top: '58%', left: '32px', transform: 'translateY(-50%)', zIndex: 50, background: 'transparent', display: 'flex', flexDirection: 'column', gap: '12px', alignItems: 'flex-start', pointerEvents: 'none'}}>
+          <div style={{position: 'fixed', top: '45%', left: '32px', transform: 'translateY(-50%)', zIndex: 50, background: 'transparent', display: 'flex', flexDirection: 'column', gap: '12px', alignItems: 'flex-start', pointerEvents: 'none'}}>
             <div style={{pointerEvents: 'auto', display: 'flex', flexDirection: 'column', gap: '12px', background: 'rgba(255,255,255,0.0)', borderRadius: '16px', boxShadow: 'none', padding: 0}}>
               <button
                 type="button"
@@ -672,7 +671,7 @@ const CreateBlog = ({
               <button
                 type="button"
                 onClick={() => addElement('image')}
-                className="flex items-center bg-orange-500 text-white px-3 py-2 rounded-lg text-sm hover:bg-orange-600"
+                className="flex items-center bg-green-500 text-white px-3 py-2 rounded-lg text-sm hover:bg-green-600"
                 style={{minWidth: '120px'}}
               >
                 <Image className="h-4 w-4 mr-1" />

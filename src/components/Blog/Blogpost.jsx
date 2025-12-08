@@ -13,7 +13,7 @@ const Blogpost = ({ post, onBack }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4">
         <button
           onClick={onBack}
-          className="flex items-center text-green-600 hover:text-orange-600 mb-4"
+          className="flex items-center text-green-600 hover:text-green-600 mb-4"
         >
           <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />

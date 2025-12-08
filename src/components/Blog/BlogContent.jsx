@@ -130,7 +130,7 @@ const BlogContent = ({ post }) => {
           {post?.title || "Blog Post"}
         </h1>
         <div className="flex items-center text-gray-600 text-sm mb-6">
-          <span>PCSCARE</span>
+          <span>GCH</span>
           <span className="mx-2">•</span>
           <span>{post?.date || "Date"}</span>
         </div>

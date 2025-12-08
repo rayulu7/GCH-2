@@ -10,8 +10,8 @@ const BlogCard = ({ post, onReadMore }) => {
   return (
     <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
       <div className="absolute top-4 left-4 z-10">
-        <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center">
-          <span className="text-white text-xs font-bold">PCS</span>
+        <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+          <span className="text-white text-xs font-bold">GCH</span>
         </div>
       </div>
 
@@ -40,7 +40,7 @@ const BlogCard = ({ post, onReadMore }) => {
           <span className="text-gray-500 text-sm">{post.date || "Date"}</span>
           <button
             onClick={() => onReadMore(post)}
-            className="text-green-500 text-sm font-medium hover:text-orange-500 transition-colors"
+            className="text-green-500 text-sm font-medium hover:text-green-500 transition-colors"
           >
             Read More
           </button>

@@ -2,13 +2,13 @@ import React from 'react';
 
 const BlogHero = () => {
   return (
-    <div className="relative h-[70vh] md:h-[90vh] bg-gradient-to-br from-green-600 via-green-500 to-orange-500 overflow-hidden">
+    <div className="relative h-[70vh] md:h-[90vh] bg-gradient-to-br from-green-600 via-green-500 to-green-500 overflow-hidden">
 
       {/* Animated Background Elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-green-400/20 via-transparent to-orange-400/20 animate-pulse"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-green-400/20 via-transparent to-green-400/20 animate-pulse"></div>
         <div className="absolute top-10 left-10 w-32 h-32 bg-green-300/10 rounded-full blur-xl animate-bounce"></div>
-        <div className="absolute bottom-10 right-10 w-40 h-40 bg-orange-300/10 rounded-full blur-xl animate-bounce" style={{animationDelay: '1s'}}></div>
+        <div className="absolute bottom-10 right-10 w-40 h-40 bg-green-300/10 rounded-full blur-xl animate-bounce" style={{animationDelay: '1s'}}></div>
         <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-blue-300/10 rounded-full blur-lg animate-ping" style={{animationDelay: '2s'}}></div>
       </div>
 
@@ -30,7 +30,7 @@ const BlogHero = () => {
         <div className="absolute top-20 left-20 text-green-200/30 text-6xl animate-bounce" style={{animationDelay: '0.5s'}}>
           ☀️
         </div>
-        <div className="absolute top-32 right-32 text-orange-200/30 text-5xl animate-bounce" style={{animationDelay: '1.5s'}}>
+        <div className="absolute top-32 right-32 text-green-200/30 text-5xl animate-bounce" style={{animationDelay: '1.5s'}}>
           🌊
         </div>
         <div className="absolute bottom-32 left-32 text-blue-200/30 text-4xl animate-bounce" style={{animationDelay: '2.5s'}}>
@@ -51,11 +51,11 @@ const BlogHero = () => {
           </div>
           <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 md:mb-6 drop-shadow-lg">
             <span className="text-green-300 animate-pulse">Green</span>
-            <span className="text-orange-400 animate-pulse" style={{animationDelay: '0.5s'}}>Carbon</span>
+            <span className="text-green-400 animate-pulse" style={{animationDelay: '0.5s'}}>Carbon</span>
             <span className="text-green-300 animate-pulse" style={{animationDelay: '1s'}}>Hub</span>
             <span className="block text-2xl sm:text-3xl md:text-4xl mt-2 text-white">Blog</span>
           </h1>
-          <p className="text-base sm:text-lg md:text-2xl text-orange-200 max-w-2xl md:max-w-4xl mx-auto font-medium drop-shadow-md leading-relaxed">
+          <p className="text-base sm:text-lg md:text-2xl text-green-200 max-w-2xl md:max-w-4xl mx-auto font-medium drop-shadow-md leading-relaxed">
             Discover expert insights on solar energy, water management, and sustainable solutions for a greener tomorrow
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
