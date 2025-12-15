@@ -44,7 +44,7 @@ const ResidentialBenefitsSection = () => {
               Benefits of Choosing Rooftop Solar Power for Homes
             </h2>
             <p
-              className="text-[#000000] mb-5 text-left"
+              className="text-white mb-5 text-left"
               style={{
                 fontFamily: 'Inter, sans-serif',
                 fontSize: '16px',
