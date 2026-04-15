@@ -78,7 +78,7 @@ export default function AdminDashboard() {
             onClick={addPost}
             className="bg-green-500 text-white px-6 py-3 rounded font-semibold hover:bg-green-600"
           >
-            Add New Post
+            Add a new Post
           </button>
         </div>
 
