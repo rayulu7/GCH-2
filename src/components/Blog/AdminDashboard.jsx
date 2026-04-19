@@ -40,7 +40,7 @@ export default function AdminDashboard() {
   return (
     <section className="py-16 bg-gray-50">
       <div className="max-w-3xl mx-auto px-4">
-        <h2 className="text-4xl font-bold mb-8 text-gray-800">Blog Admin</h2>
+        <h2 className="text-4xl font-bold mb-8 text-gray-800">Admin</h2>
 
         
         <div className="space-y-4 mb-12">
