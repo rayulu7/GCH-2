@@ -26,7 +26,7 @@ const Blog = () => {
 
     const adminBlogs = JSON.parse(localStorage.getItem('blogs') || '[]');
 
-    // Initialize demo blogs if none exist
+    
     if (adminBlogs.length === 0) {
       const demoBlogs = [
         {
